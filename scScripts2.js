@@ -67,7 +67,7 @@ var badStar = {
         obj._xSpeed=xSpeed;
         obj._ySpeed=ySpeed;
         obj._img = new Image();
-        obj._img.src="images/bstar.png";
+        obj._img.src="images/bstar.jpg";
         return obj;
     },
 
