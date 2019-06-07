@@ -6,7 +6,7 @@
 <head>
     <title>StarCatcher - Software Development</title>
 <!--    our link to the javascript file that will control the game actions -->
-    <script type="text/javascript" src="scScripts.js"></script>
+    <script type="text/javascript" src="scScripts2.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--    out styles will be internal until we need to move them to an external file -->
     <style type="text/css">
@@ -16,8 +16,8 @@
         #game {
             margin-left: auto;
             margin-right: auto;
-            width: 800px;
-            height: 500px;
+            width: 1000px;
+            height: 550px;
             background-color: lightblue;
             border-radius: 10px;
         }
@@ -34,17 +34,23 @@
             margin-right:40px;
         }
         .centerText {text-align: center;}
-
+ 
+ body {
+ background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjizsCIoNXiAhUlh1QKHUtLAV8QjRx6BAgBEAU&url=https%3A%2F%2Fbrendacarrillo95.wordpress.com%2F2013%2F01%2F25%2Fafrican-safari-gif%2F&psig=AOvVaw3LU8ogm9k4Qzs45jj947YE&ust=1559924047343877");
+ background-color: #F3A627;
+}
         
 
     </style>
 </head>
 <body>
-    <h2 class="centerText">Game ON!</h2>
+    <h2 class="centerText">Safari Grab</h2>
     <div id="game">
         <canvas id="myCanvas"></canvas>
-        <p id="leftSide">Player 1: <span id="p1ScoreDisp">0</span></p>
-        <p id="rightSide">Player 2: <span id="p2ScoreDisp">0</span></p>
+        <p id="leftSide">Player 2: <span id="p2ScoreDisp">0</span><br>
+        Lives: <span id="p2LivesDisp">3</span></p>
+        <p id="rightSide">Player 1: <span id="p1ScoreDisp">0</span><br>
+        Lives: <span id="p1LivesDisp">3</span></p>
     </div>
 </body>
 </html>
